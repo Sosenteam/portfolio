@@ -1,15 +1,16 @@
-:root{
---text: #050506;
---background: #fcfcfd;
---primary: #5c59af;
---secondary: #daa1d3;
---accent: #e55270;
+:root {
+    --text: #050506;
+    --background: #fcfcfd;
+    --primary: #5c59af;
+    --secondary: #daa1d3;
+    --accent: #e55270;
 }
 
 
 body {
     background-color: #fcfcfd;
     margin: 0;
+    font-family: "Raleway", sans-serif;
 }
 
 #pagetitle {
@@ -68,14 +69,14 @@ hr {
     font-family: "Raleway", sans-serif;
     border: 1px;
     padding: 10px;
-    
+
     border-style: solid;
     margin-bottom: 10px;
     border-radius: 10px;
     transition: all 200ms ease-in-out;
 }
 
-.project:hover{
+.project:hover {
     border: 5px;
     border-style: solid;
     /* REDO THIS PART SO IT HAS ROUNDED CORNERS*/
@@ -100,31 +101,84 @@ hr {
     font-weight: 300;
     font-size: 200%;
 }
-.project a{
+
+.project a {
     color: #e55270;
 }
+
 .project p {
     font-weight: 200;
     font-size: 120%;
 }
-.contact{
+
+.contact {
     font-family: "Raleway", sans-serif;
-    text-align: center;   
+    text-align: center;
     margin: 20px;
     margin-left: 30%;
-    margin-right: 30%; 
+    margin-right: 30%;
     border: 1px;
     border-style: solid;
     border-radius: 10px;
     transition: all 400ms ease-out;
 }
-.contact h2{
+
+.contact h2 {
     font-weight: 100;
     font-size: 200%;
 }
+
 .contact:hover {
     border: 1px, #e55270;
     padding: 20px;
     background-color: #5c59af;
-    color:#fcfcfd ;
+    color: #fcfcfd;
+}
+
+.bio {
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 25%;
+
+    width: 70%;
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    #names{
+        float: right;
+        margin-right: 20% ;
+    }
+    h2 {
+        font-weight: 100;
+        font-size: 500%;
+        margin-bottom: 0px;
+        
+    }
+    h3 {
+        font-weight: 200;
+        font-size: 160%;
+        
+    }
+    ul{
+        list-style-type: '-';
+    }
+    li{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #pfp{
+        margin-top: 3%;
+        margin-left: 6% ;
+        border: 1px;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 10px;
+        min-width: 250px;
+        min-height: 250px;
+        display: inline-block;
+    }
+    img{
+        border-radius: 10px;
+    }
 }
