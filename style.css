@@ -15,7 +15,7 @@ body {
 
 #pagetitle {
     text-align: center;
-    font-family: "Raleway", sans-serif;
+
     font-weight: 100;
     font-size: 80px;
     margin: 0;
@@ -62,28 +62,34 @@ hr {
     height: 3px;
     background-color: gray;
 }
-
+@keyframes projectHover {
+    0% {background-image: linear-gradient(360deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);}
+    50% {background-image: linear-gradient(180deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);}
+    100% {background-image: linear-gradient(0deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);}
+  }
 .project {
     max-width: 45%;
     margin: auto;
-    font-family: "Raleway", sans-serif;
-    border: 1px;
-    padding: 10px;
-
+    border: 2px;
+    padding: 6px 12px;
+    position: relative;
     border-style: solid;
     margin-bottom: 10px;
     border-radius: 10px;
+    background-image: white;
+    box-shadow: inset 0 100vw white;
     transition: all 200ms ease-in-out;
+
 }
 
 .project:hover {
-    border: 5px;
-    border-style: solid;
-    /* REDO THIS PART SO IT HAS ROUNDED CORNERS*/
-    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-    border-image-slice: 1;
+    border-radius: 10px;
+    padding: 8px 14px;
+    background-image: linear-gradient(330deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    animation: steps(20, jump-none) projectHover 2s infinite;
     background-origin: border-box;
-    background-clip: content-box, border-box;
+    box-shadow: inset 0 100vw white;
+    border: 5px solid transparent;
 }
 
 .project img {
@@ -103,7 +109,15 @@ hr {
 }
 
 .project a {
-    color: #e55270;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    /* No underlines on the link */
+    z-index: 10;
+    /* Places the link above everything else in the div */
 }
 
 .project p {
@@ -112,7 +126,7 @@ hr {
 }
 
 .contact {
-    font-family: "Raleway", sans-serif;
+
     text-align: center;
     margin: 20px;
     margin-left: 30%;
@@ -136,7 +150,7 @@ hr {
 }
 
 .bio {
-    font-family: "Raleway", sans-serif;
+
     margin-top: 20px;
     margin-left: 15%;
     margin-right: 25%;
@@ -145,31 +159,37 @@ hr {
     border: 1px;
     border-style: solid;
     border-radius: 10px;
-    #names{
+
+    #names {
         float: right;
-        margin-right: 20% ;
+        margin-right: 20%;
     }
+
     h2 {
         font-weight: 100;
         font-size: 500%;
         margin-bottom: 0px;
-        
+
     }
+
     h3 {
         font-weight: 200;
         font-size: 160%;
-        
+
     }
-    ul{
+
+    ul {
         list-style-type: '-';
     }
-    li{
+
+    li {
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    #pfp{
+
+    #pfp {
         margin-top: 3%;
-        margin-left: 6% ;
+        margin-left: 6%;
         border: 1px;
         border-style: solid;
         border-radius: 10px;
@@ -178,7 +198,8 @@ hr {
         min-height: 250px;
         display: inline-block;
     }
-    img{
+
+    img {
         border-radius: 10px;
     }
 }
