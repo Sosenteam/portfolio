@@ -91,12 +91,11 @@ hr {
 div.scrollContainer{
   overflow: hidden;
   white-space: nowrap;
-  
   padding: 10px;
 }
 
 div.scrollContainer img{
-    animation: scroll 5s infinite linear;
+
     margin: 0 0.5em;
     /*padding: 10px;*/
     object-fit: cover;
