@@ -120,6 +120,7 @@ hr {
     object-fit: cover;
     width: 200px;
     height: 160px;
+    border-radius: 5px;
     transition: 100ms ease-in-out;
 }
 .projCard a{
