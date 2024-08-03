@@ -1,8 +1,8 @@
-let currentCount = 1;
-let pp = setInterval(() => {
-    currentCount++;
-    document.getElementById("counter").innerHTML = currentCount;
-}, 100);
+// let currentCount = 1;
+// let pp = setInterval(() => {
+//     currentCount++;
+//     document.getElementById("counter").innerHTML = currentCount;
+// }, 100);
 
 
 
