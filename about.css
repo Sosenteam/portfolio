@@ -1,0 +1,71 @@
+.bio {
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 25%;
+    width: 70%;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.bio #names {
+    float: right;
+    margin-right: 20%;
+}
+
+.bio h2 {
+    font-weight: 100;
+    font-size: 500%;
+    margin-bottom: 0px;
+}
+
+.bio h3 {
+    font-weight: 200;
+    font-size: 160%;
+}
+
+.bio ul {
+    list-style-type: '-';
+}
+
+.bio li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bio #pfp {
+    margin-top: 3%;
+    margin-left: 6%;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 250px;
+    min-height: 250px;
+    display: inline-block;
+}
+
+.bio img {
+    border-radius: 10px;
+}
+
+@keyframes spinImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bio #pfp:hover {
+  
+    animation: spinImage 1s infinite linear;
+    transition: all 1s ease;
+}
+
+.bio p{
+    margin: 10px;
+    margin-left: 50%;
+}
